@@ -35,7 +35,7 @@ public class Circle extends GeometricObject<Circle> {
     System.out.println("The circle is created: " + getDateCreated() +
 " and the radius is " + radius);
   }
-  @Override
+  @Override    /*overrides object's toString method*/
   public int compareTo(Circle circle){
     if(this.radius == circle.getRadius()){
       return 1;
