@@ -38,13 +38,13 @@ public class Circle extends GeometricObject<Circle> {
   @Override
   public int compareTo(Circle circle){
     if(this.radius == circle.getRadius()){
-      return 0;
-    }
-    else if(this.radius > circle.getRadius()){
       return 1;
     }
+    else if(this.radius > circle.getRadius()){
+      return 0;
+    }
     else{
-      return -1;
+      return 0;
     }
   }
 }

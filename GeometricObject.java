@@ -43,7 +43,7 @@ public abstract class GeometricObject<E> implements Comparable<E> {
   /*abstract method to get the area of the object*/
   public abstract double getArea();
   /*static method to find the larger object*/
-  public static <T extends GeometricObject> T findLarger(T obj1, T obj2){
+  public static <T extends GeometricObject> T findEqual(T obj1, T obj2){
     if(obj1.getArea() > obj2.getArea()){
       return obj1;
     }

@@ -4,15 +4,16 @@ public class Test {
     /*creates circle objects*/
     Circle circle1 = new Circle(10.0);
     Circle circle2 = new Circle(5.0);
-    Circle largerCircle;
+    Circle equalCircle;
 
     /*displays results*/
-    System.out.println("There are two circles, circle1 and circle2, with radii of 10.0 and 5.0 respectively.");
-      largerCircle = Circle.findLarger(circle1, circle2);
-    System.out.println("The larger circle has a radius of: " + 
-      largerCircle.getRadius());
-
-
+    equalCircle = Circle.findEqual(circle1, circle2);
+    if(equalCircle == null){
+      System.out.println("The circles are equal.");
+    }else{
+      System.out.println("The circles are not equal.");
+    
+    }
   }
 
 }
